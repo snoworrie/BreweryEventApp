@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BreweryEventApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_event_detail">EventDetail</string>
+    <string name="aboutText">The Brewery är musikaliska explosioner, fester, sammankomster som vanligtvis sker i Wasabryggeriets lokaler i centrala Borlänge.
+        \n\nThe Brewery arrangeras av kulturföreningen Basklav och är helt fristående från Wasabryggeriet och Wasabryggeriets vänner.
+        \n\nThe Brewery ska inte förväxlas med den verksamhet som föreningen Wasabryggeriets vänner själv arrangerar.
+       </string>
+</resources>

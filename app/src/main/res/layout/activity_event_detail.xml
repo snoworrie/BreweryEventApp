@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/appbar_padding_top"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/eventDetailToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="10dp"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:src="@drawable/thebrewery2" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventDetailImageId"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        />
+    <TextView
+        android:id="@+id/eventDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/eventDetailImageId"
+        android:layout_alignTop="@id/eventDetailImageId"
+        android:layout_alignRight="@id/eventDetailImageId"
+        android:layout_alignBottom="@id/eventDetailImageId"
+        android:layout_margin="1dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="1"
+
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="30dp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:layout_below="@id/eventDetailImageId"/>
+    <TextView
+        android:id="@+id/eventDetailDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/eventDetailTitle"
+        android:drawableLeft="@drawable/ic_alarm_white_24dp"
+        android:layout_centerInParent="true"
+        android:textColor="#fff"
+        android:background="#80000000"
+        android:gravity="center"
+        android:layout_marginBottom="17dp"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventDetailDescription"
+        style="@style/TextBody"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/eventDetailImageId"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eventDetailBuy"
+        android:text="Köp biljett"
+        android:layout_below="@id/eventDetailDescription"
+        android:layout_centerHorizontal="true"
+        android:background="#455A64"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:onClick="onBuyClick"
+        />
+
+</RelativeLayout>
+
+
+
